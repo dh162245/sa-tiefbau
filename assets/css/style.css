@@ -59,7 +59,8 @@ nav ul {
 
 nav.color ul {
     background: rgb(2,0,36);
-    background: #0066b2;
+    /* background: #0066b2; */
+    background-color: #00b8ff;
 }
 
 nav ul li {
@@ -80,7 +81,7 @@ nav ul li:nth-last-child(1){
 .menu-icon {
   line-height: 60px;
   width: 100%;
-  background: #0066b2;
+  background: #00b8ff;
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -115,7 +116,7 @@ nav ul li:nth-last-child(1){
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
-    background-color: #0066b2;
+    background-color: #00b8ff;
     border: 1px solid transparent;
     letter-spacing: 1px;
     padding: 0.7em 2em;
@@ -146,7 +147,7 @@ nav ul li:nth-last-child(1){
 }
 
 .services button{
-    background-color: #0066b2;
+    background-color: #00b8ff;
     border: 0;
     border-radius: 1px;
     padding: 1em 1.5em;
@@ -196,11 +197,14 @@ nav ul li:nth-last-child(1){
     padding: 1em;
     img{
         margin-top: 2em;
+        width: 50%;
     }
     p{
         margin-top: 2em;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2em;
+        width: 50%;
+        margin-bottom: 1.4em;
         
     }
     button{
@@ -253,7 +257,7 @@ nav ul li:nth-last-child(1){
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3em;
     align-items: center;
-    background-color: #0066b2;
+    background-color: #00b8ff;
 }
 
 .adress, .impressum, .contact-logo{
@@ -301,12 +305,12 @@ mobile
     }
     nav ul {
           max-height: 0px;
-          background: #0066b2;
+          background: #00b8ff;
   
     }
   
     nav.black ul {
-          background: #0066b2;
+          background: #00b8ff;
     }
   
     .showing {
