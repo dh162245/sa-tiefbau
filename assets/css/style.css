@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Rajdhani', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Homemade Apple', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  top: 0;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 3;
+
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.color ul {
+    background: rgb(2,0,36);
+    background: #0066b2;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav ul li:nth-last-child(1){
+  margin-left: 5em;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #0066b2;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.header{
+    height: 100vh;
+    width: 100%; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../img/header.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Rajdhani', sans-serif;
+    width: 30%;
+    margin: 15em 10em;
+    color: #fff;
+
+    h1{
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+    h2{
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+    a{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    background-color: #0066b2;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    padding: 0.7em 2em;
+    color: #fff;
+    }
+    a:hover{
+        background-color: #fff;
+        color: #0066b2;
+        transition: 0.5s ease-in;
+    }
+}
+
+.main-header{
+    margin: 2em auto;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+}
+
+.services{
+    display: grid;
+    width: 80%;
+    margin: 3em auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2em 2em;
+    gap: 20px;
+    align-items: center;
+}
+
+.services button{
+    background-color: #0066b2;
+    border: 0;
+    border-radius: 1px;
+    padding: 1em 1.5em;
+    box-shadow: 4px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+     height: 100vh;
+     width: 100vw; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     opacity: 0;
+    visibility: hidden;
+    animation: modalFadeOut 0.3s forwards;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+ 
+.modal{
+    background-color: #fff;
+    max-width: 100%;
+    padding: 1em;
+    img{
+        margin-top: 2em;
+    }
+    p{
+        margin-top: 2em;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        
+    }
+    button{
+        float: right;
+    }
+}
+.flex-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-container.show{
+    animation: modalFadeIn 0.3s forwards; /* Trigger fade-in animation */
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.show{
+    animation: modalFadeIn 0.3s forwards; /* Trigger fade-in animation */
+
+}
+
+.info-text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2em;
+
+    h2{
+        font-size: 12px;
+        font-family: 'Oswald', sans-serif;
+        color: #7CB9E8;
+        margin-top: 4em;
+    }
+    h1{
+        font-family: 'Oswald', sans-serif;
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.3em;
+        margin-top: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3em;
+    align-items: center;
+    background-color: #0066b2;
+}
+
+.adress, .impressum, .contact-logo{
+    margin: 0 auto;
+    color: #fff;
+    h2{
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 1em;
+    }
+    p{
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0.3em;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vh;
+    
+    a{
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        color: #0066b2;
+        margin-left: 50px;
+    }
+
+    a:hover{
+        color: #7CB9E8;
+    }
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+mobile
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+    nav ul {
+          max-height: 0px;
+          background: #0066b2;
+  
+    }
+  
+    nav.black ul {
+          background: #0066b2;
+    }
+  
+    .showing {
+          max-height: 34em;
+    }
+  
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 5px;
+          text-align: center;
+    }
+  
+    nav ul li:nth-last-child(1){
+      margin-left: 0;
+      padding-bottom: 12px;
+    }
+  
+    .menu-icon {
+          display: block;
+    }
+    .title{
+        font-family: 'Rajdhani', sans-serif;
+        width: 100%;
+        margin: 10em auto;
+        h1{
+            font-size: 2.5em;
+        }
+    }
+    .title h1, .title h2, .title a{
+        padding-left: 15px
+    }
+}  
