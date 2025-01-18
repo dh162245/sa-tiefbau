@@ -256,6 +256,7 @@ nav ul li:nth-last-child(1){
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3em;
+    padding: 2em;
     align-items: center;
     background-color: #00b8ff;
 }
@@ -271,6 +272,9 @@ nav ul li:nth-last-child(1){
         font-family: 'Montserrat', sans-serif;
         margin-bottom: 0.3em;
     }
+}
+.contact-logo img{
+    width: 90%;
 }
 
 footer{
@@ -342,5 +346,37 @@ mobile
     }
     .title h1, .title h2, .title a{
         padding-left: 15px
+    }
+    .main-header{
+        font-size: 1.4em;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+    }
+    .modal-container{
+        top: 12%;
+    }
+    .modal{
+        padding: 0;
+
+        p{
+            width: 90%;
+        }
+    }
+    .modal img{
+        width: 90%;
+    }
+    .info-text{
+        width: 90%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        margin: 1.3em;
+    }
+    .footer{
+        flex-direction: column;
     }
 }  
