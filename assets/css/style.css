@@ -348,21 +348,33 @@ mobile
         padding-left: 15px
     }
     .main-header{
-        font-size: 1.4em;
+        font-size: 1em;
+        margin: 0 auto;
+        margin-top: 1.4em;
+        text-align: center;
     }
 
     .services{
         grid-template-columns: 1fr;
     }
     .modal-container{
-        top: 12%;
+        top: 5%;
     }
     .modal{
-        padding: 0;
+        padding: 15px;
 
         p{
             width: 90%;
+            font-size: 16px;
         }
+        h1{
+            font-size: 24px;
+            margin-top: 1em;
+        }
+    }
+
+    .close{
+        margin-top: 1em;
     }
     .modal img{
         width: 90%;
